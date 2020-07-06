@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 50px;
+}
+
+[class*= "col-"] {
+  /* debug */
+  border: 1px solid black;
+}
+
+/* navbar top */
+.navbar-top {
+  background-color: #f2f2f2;
+}
+
+.content-left, .content-right {
+  line-height: 50px;
+}
+
+.content-left a:first-child {
+  margin-right: 20px;
+  color: black;
+}
+
+.content-right {
+  text-align: right;
+}
+
+.content-right a:first-child {
+  margin-right: 20px;
+}
+
+.content-left a, .content-right a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* INIZIO navbar main */
+
+.navbar-main .content-navbar-main .logo, .navbar-main .content-navbar-main .navbar-main-right {
+  width: 20%;
+}
+
+.navbar-main .content-navbar-main .navbar-main-center{
+  width: 60%;
+}
+
+.content-navbar-main .logo {
+  line-height: 80px;
+}
+
+.content-navbar-main .logo a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-main-center {
+  line-height: 80px;
+}
+
+.navbar-main-center ul  {
+  display: flex;
+}
+
+.navbar-main-center ul li {
+  list-style: none;
+  padding-right: 30px;
+  position: relative;
+}
+
+.navbar-main-center ul li a {
+  color: grey;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.navbar-main-center ul li > a:hover {
+  color: black;
+}
+
+.navbar-main-right {
+  text-align: right;
+  line-height: 80px;
+}
+
+.navbar-main-right #button {
+  text-decoration: none;
+  padding: 20px;
+  background-color: black;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.navbar-main-right #button:hover {
+  opacity: 0.7;
+}
+
+/* menu a tendina */
+.navbar-main-center .dropdown {
+  position: absolute;
+  top: 65px;
+  left: -10px;
+  min-width: 180px;
+  min-height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px grey;
+  line-height: normal;
+  display: none;
+}
+
+
+.navbar-main-center .dropdown a {
+  display: block;
+  margin: 20px 0;
+  transition: 0.25s;
+}
+
+.navbar-main-center .dropdown a:hover {
+  color: black;
+}
+/* // */

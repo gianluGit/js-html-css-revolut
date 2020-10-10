@@ -26,7 +26,11 @@ $(document).ready(function() {
   // evento click sul dropdown-hamburger-menu
   var mainLinkH = $('.hamburger-menu .main-link');
   mainLinkH.click(function() {
-    $('.dropdown-hamburger').slideUp();
-    $(this).next('.dropdown-hamburger').slideToggle();
+    if ($(this).next('.dropdown-hamburger').hasClass('visible') == false) {
+      $('.dropdown-hamburger').removeClass('visible').slideUp();
+      $(this).next('.dropdown-hamburger').addClass('visible').slideDown();
+    } else if ($(this).next('.dropdown-hamburger').hasClass('visible') == true) {
+      $(this).next('.dropdown-hamburger').removeClass('visible').slideUp();
+    }
   });
 });

@@ -251,6 +251,7 @@
 
 .jumbo-left select, .jumbo-left input {
   border: none;
+  outline: none;
   border-bottom: 1px solid grey;
   font-size: 18px;
 }
